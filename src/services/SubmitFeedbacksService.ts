@@ -25,10 +25,10 @@ export class SubmitFeedbacksService {
     await this.mailService.sendMail({
       subject: "Novo feedback",
       body: [
-        `< style="font-family: serif; font-size: 16px; color: #222">`,
+        `<div style="font-family: serif; font-size: 16px; color: #222;">`,
         `<p>Tipo do feedback ${type}</p>`,
         `<p>Comentário: ${comment}</p>`,
-        screenshot ? `<img src="${screenshot}"` : "",
+        screenshot ? `<img src="${screenshot}" />` : "",
       ].join("\n"),
     });
   }

@@ -9,5 +9,5 @@ app.use(cors());
 app.use(routes);
 
 app.listen(process.env.PORT || 3333, () => {
-  console.log("ok");
+  console.log("server is running !");
 });
